@@ -21,4 +21,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Te dejo mi [linkedin](https://www.linkedin.com/in/marcia-judith-veron-467763148/= para mas informacion
+Te dejo mi [linkedin](https://www.linkedin.com/in/marcia-judith-veron-467763148/=) para mas informacion
