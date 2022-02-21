@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Navbar } from "./components/Navbar";
+import 'boxicons';
+import Home from './components/Home';
+import Carrito from './components/Carrito';
+import ProductoLista from './components/ProductoLista';
+import { BrowserRouter } from "react-router-dom";
+import { DataProvider } from './context/DataProvider';
+import Footer from './components/Footer';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola Mundo!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Navbar />
+          <Home />
+          <Carrito />
+          <ProductoLista />
+          <Footer />
+        </BrowserRouter>
+      </div>
+    </DataProvider>
   );
 }
 
